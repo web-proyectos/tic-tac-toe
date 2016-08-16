@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Tic-Tac-Toe Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdn.socket.io/socket.io-1.4.5.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="ttt.js" type='text/javascript'></script>
+
+
+    <link rel="stylesheet" href="myCSS.css">
+
+</head>
+
+<body>
+    <div id="full">
+        <h1 id="status"></h1>
+        <form class="idInput" id="joinGame">
+            <input type="text" placeholder="Ex: 69" id="gameID">
+            <button type="submit">Join Game</button>
+        </form>
+        <div id="GAMEBOARD">
+            <table>
+                <tr id="row1">
+                    <td class="square" id="0"></td>
+                    <td class="square v" id="1"></td>
+                    <td class="square" id="2"></td>
+                </tr>
+                <tr id="row2">
+                    <td class="square h" id="3"></td>
+                    <td class="square v h" id="4"></td>
+                    <td class="square h" id="5"></td>
+                </tr>
+                <tr id="row3">
+                    <td class="square" id="6"></td>
+                    <td class="square v" id="7"></td>
+                    <td class="square" id="8"></td>
+                </tr>
+
+            </table>
+        </div>
+        <footer id="remake"> Remake? </footer>
+    </div>
+    <div class="half" id="newGame">
+        <h1 class="intro"> Create Game</h1>
+    </div>
+    <div class="half" id="joinGame1">
+        <h1 class="intro"> Join Game </h1>
+    </div>
+    <p id="me">Coded by <a href="https://www.linkedin.com/in/luis-hernandez-cruz-9553aa120"> Luis Hernandez Cruz</a></p>
+
+
+</body>
+
+</html>
