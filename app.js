@@ -4,7 +4,7 @@
 ///  uses socket.io and express
 ///
 //////////////////////////////////
-
+"use strict";
 
 // Set up server
 const express = require('express');
