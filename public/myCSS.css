@@ -9,11 +9,7 @@ body {
     flex-direction: row; 
 
     /* background color */
-    background-color: lightblue;
-    background-image: -webkit-linear-gradient(bottom, darkblue, lightblue);
-    background-image: -moz-linear-gradient(bottom, darkblue, lightblue);
-    background-image: -o-linear-gradient(bottom, darkblue, lightblue);
-    background-image: linear-gradient(to top, darkblue, lightblue);
+    background-color: darkblue;
  }       
 
 .container { 

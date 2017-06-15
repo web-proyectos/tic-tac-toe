@@ -139,6 +139,10 @@ $(document).ready(function () {
     // Called when a player has quit
     socket.on("quit", function () {
         $("#status").html("Connection Lost. Please Create a New Game");
+        $("#board").hide();
+        $(".item").show();
+        $("#join").hide();
+        $("#remake").hide();
     });
 
     // Called to update the gameboard
