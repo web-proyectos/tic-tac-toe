@@ -141,6 +141,7 @@ $(document).ready(function () {
         $("#status").html("Connection Lost. Please Create a New Game.");
         $("#board").hide();
         $(".item").show();
+        $(".title").hide();
         $("#join").hide();
         $("#remake").hide();
     });
