@@ -1,14 +1,20 @@
 # tic-tac-toe
 
 Two player tic-tac-toe online game.
+![Image of Tic-Tac-Toe](images/splash.JPG?raw=true "Image of Tic-Tac-Toe")
 
-# How To Play
+# How to Start a Game
 
-Go to https://twoplayer-tictactoe.herokuapp.com. One player clicks "create game." They are given a gameID which the second person can use two join, by clicking "join game" and entering the id.
+Go to https://twoplayer-tictactoe.herokuapp.com. 
 
-Once someone wins, ties, or loses they have the option to remake the game.
+* First player clicks create game and sends GameID to other player. 
+* Second player enters the GameID in the input box and clicks enter
 
-# What is used?
+# Gameplay
 
-I used Html, Javascript (jquery), socket.io and Node.js (express and socket packages) to make the app.
-I used heroku to deploy my app.
+![Gameplay of Tic-Tac-Toe](images/gameplay.JPG?raw=true "Gameplay of Tic-Tac-Toe")
+* Game is played like a regular tic-tac-toe game.
+* Upon win, loss, or tie the game can be restarted.
+
+# Authors
+* Luis Hernandez Cruz - lhernandezcruz@g.hmc.edu
