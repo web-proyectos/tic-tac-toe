@@ -3,53 +3,58 @@
 
 <head>
     <title> Tic-Tac-Toe Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto|Permanent+Marker" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://cdn.socket.io/socket.io-1.4.5.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="ttt.js" type='text/javascript'></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
 
+    <script src="client.js" type='text/javascript'></script>
     <link rel="stylesheet" href="myCSS.css">
 
 </head>
 
 <body>
-    <div id="full">
-        <h1 id="status"></h1>
-        <form class="idInput" id="joinGame">
-            <input type="text" placeholder="Ex: 69" id="gameID">
-            <button type="submit">Join Game</button>
-        </form>
-        <div id="GAMEBOARD">
+    <a href="https://github.com/lhernandezcruz"><img style="position: absolute; top: 0; right: 0; border: 0;" 
+    src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" 
+    alt="Fork me on GitHub"></a>
+
+
+    <div class="container text-center">
+        <div class="status" id="status">
+        </div>
+        <div class="item title">Tic-Tac-Toe
+        </div>
+        <div class="item">
+            <button id="create">Create Game</button>
+            <input id="join" class="text-center" placeholder="Enter GameID">
+        </div>
+
+        <div id="board">
             <table>
                 <tr id="row1">
-                    <td class="square" id="0"></td>
-                    <td class="square v" id="1"></td>
-                    <td class="square" id="2"></td>
+                    <td class="cell" id="0"></td>
+                    <td class="cell border-left-right" id="1"></td>
+                    <td class="cell" id="2"></td>
                 </tr>
                 <tr id="row2">
-                    <td class="square h" id="3"></td>
-                    <td class="square v h" id="4"></td>
-                    <td class="square h" id="5"></td>
+                    <td class="cell border-top-bottom" id="3"></td>
+                    <td class="cell border-left-right border-top-bottom" id="4"></td>
+                    <td class="cell border-top-bottom" id="5"></td>
                 </tr>
                 <tr id="row3">
-                    <td class="square" id="6"></td>
-                    <td class="square v" id="7"></td>
-                    <td class="square" id="8"></td>
+                    <td class="cell" id="6"></td>
+                    <td class="cell border-left-right" id="7"></td>
+                    <td class="cell" id="8"></td>
                 </tr>
 
             </table>
         </div>
-        <footer id="remake"> Remake? </footer>
-    </div>
-    <div class="half" id="newGame">
-        <h1 class="intro"> Create Game</h1>
-    </div>
-    <div class="half" id="joinGame1">
-        <h1 class="intro"> Join Game </h1>
-    </div>
-    <p id="me">Coded by <a href="https://www.linkedin.com/in/luis-hernandez-cruz-9553aa120"> Luis Hernandez Cruz</a></p>
 
+        <div class="item" id="remake">
+            <button>Remake?</button>
+        </div>
+    </div>
 
 </body>
 
