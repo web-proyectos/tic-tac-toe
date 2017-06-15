@@ -121,7 +121,7 @@ $(document).ready(function () {
         updateGameboard();
 
         // Tell user they lost and show remake button
-        $("#status").html("YOU LOST. GG");
+        $("#status").html("YOU LOST. GG.");
         $("#remake").show();
     });
 
@@ -132,13 +132,13 @@ $(document).ready(function () {
         updateGameboard();
 
         // Tell user they tied and show remake button
-        $("#status").html("Tie");
+        $("#status").html("Tie.");
         $("#remake").show();
     });
 
     // Called when a player has quit
     socket.on("quit", function () {
-        $("#status").html("Connection Lost. Please Create a New Game");
+        $("#status").html("Connection Lost. Please Create a New Game.");
         $("#board").hide();
         $(".item").show();
         $("#join").hide();
@@ -155,7 +155,7 @@ $(document).ready(function () {
         // Check if it is users turn 
         if (game.player.turn) {
             // Tell user it is their turn
-            $("#status").html("Your turn");
+            $("#status").html("Your turn.");
         } else {
             // Tell user it is not their turn
             $("#status").html("Other player's turn.");
