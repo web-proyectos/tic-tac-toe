@@ -20,6 +20,7 @@ body {
     margin: auto; 
     box-shadow: 0px 0px 50px 1px lightgrey; 
 } 
+
 .item { 
     padding: 5px 25px 5px;
     margin: 20px 20px 15px; 
@@ -82,4 +83,12 @@ table {
 .border-top-bottom { 
     border-top: 1px solid #000;
     border-bottom: 1px solid #000; 
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
 }
