@@ -7,8 +7,6 @@ body {
     min-height: 100%; 
     display: flex; 
     flex-direction: row; 
-
-    /* background color */
     background-color: darkblue;
  }       
 
@@ -37,6 +35,11 @@ body {
     font-size: 50px; 
     font-family: 'Quicksand', sans-serif; 
 } 
+
+ol {
+  text-align: left;
+  font-family: 'Quicksand', sans-serif; 
+}
 
 button, input { 
     font-family: 'Quicksand', sans-serif; 
