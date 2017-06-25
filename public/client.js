@@ -148,8 +148,14 @@ $(document).ready(function () {
 
     // Called to update the gameboard
     function updateGameboard() {
-        // Set value of each cell in the board
+        // Set value and color of each cell in the board
         $.each(game.board, function (key, value) {
+            if (value == "X") {
+                $("#" + key).removeClass("red").addClass("blue");
+            } else {
+                $("#" + key).removeClass("blue").addClass("red");
+            }
+
             $("#" + key).html(value);
         });
 

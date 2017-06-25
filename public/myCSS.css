@@ -7,8 +7,6 @@ body {
     min-height: 100%; 
     display: flex; 
     flex-direction: row; 
-
-    /* background color */
     background-color: darkblue;
  }       
 
@@ -22,6 +20,7 @@ body {
     margin: auto; 
     box-shadow: 0px 0px 50px 1px lightgrey; 
 } 
+
 .item { 
     padding: 5px 25px 5px;
     margin: 20px 20px 15px; 
@@ -37,6 +36,11 @@ body {
     font-size: 50px; 
     font-family: 'Quicksand', sans-serif; 
 } 
+
+ol {
+  text-align: left;
+  font-family: 'Quicksand', sans-serif; 
+}
 
 button, input { 
     font-family: 'Quicksand', sans-serif; 
@@ -79,4 +83,12 @@ table {
 .border-top-bottom { 
     border-top: 1px solid #000;
     border-bottom: 1px solid #000; 
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
 }
