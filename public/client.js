@@ -75,7 +75,7 @@ $(document).ready(function () {
     // Called when board is clicked
     $("table").on("click", function (e) {
         // Get the cell that was clicked
-        let cellClicked = e.toElement.id;
+        let cellClicked = e.target.id;
 
         // When player clicks make sure it is their turn
         if (game.player.turn === true) {
