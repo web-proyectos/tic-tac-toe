@@ -3,9 +3,6 @@
     "version": "1.5.0",
     "description": "tic-tac-toe multiplayer game",
     "main": "app.js",
-    "engines": {
-        "node": "4.4.6"
-    },
     "scripts": {
         "start": "node app.js"
     },
