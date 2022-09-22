@@ -9,6 +9,12 @@ $(document).ready(function () {
     // Create Socket
     var socket = io();
 
+    // automatically join game if id matches up
+    const gameId = getGameId();
+    if (gameId) {
+        socket.emit('join', { gameID: gameId });
+    }
+
     // Called when create button is clicked
     $("#create").on("click", function () {
         // Emit 'create' game and hide things that are not necessary
