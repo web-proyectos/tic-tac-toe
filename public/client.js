@@ -31,7 +31,8 @@ $(document).ready(function () {
     // Called when game has been created
     socket.on('created', function (data) {
         // Show the GameID
-        $("#status").html("Send this GameID to other player: " + data.id);
+        const url = window.location.href + "?gameId=" + data.id;
+        $("#status").html(`Send this link to other player: <p >${url}</p> `);
     });
 
     // Called when join has a key entered
