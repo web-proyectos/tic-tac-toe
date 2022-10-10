@@ -34,6 +34,7 @@ $(document).ready(function () {
         const url = window.location.href + "?gameId=" + data.id;
         $("#status").html(`Send this link to other player:`);
         $("#link").text(url);
+        $('#link').show();
     });
 
     // Called when join has a key entered
