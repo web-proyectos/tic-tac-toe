@@ -32,7 +32,8 @@ $(document).ready(function () {
     socket.on('created', function (data) {
         // Show the GameID
         const url = window.location.href + "?gameId=" + data.id;
-        $("#status").html(`Send this link to other player: <p >${url}</p> `);
+        $("#status").html(`Send this link to other player:`);
+        $("#link").text(url);
     });
 
     // Called when join has a key entered
@@ -52,6 +53,7 @@ $(document).ready(function () {
         // hide remake and other items
         $("#remake").hide();
         $(".item").hide();
+        $('#link').hide();
 
         // Update game object
         game.id = data.id;
