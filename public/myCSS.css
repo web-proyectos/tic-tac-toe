@@ -27,7 +27,7 @@ body {
 } 
 
 .title { 
-    font-size: 65px; 
+    font-size: 45px; 
     font-family: 'Quicksand', sans-serif; 
     font-weight: bold; 
 } 
@@ -36,6 +36,10 @@ body {
     font-size: 50px; 
     font-family: 'Quicksand', sans-serif; 
 } 
+
+.link {
+    margin-top: 15px;
+}
 
 ol {
   text-align: left;

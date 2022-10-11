@@ -5,7 +5,7 @@ Two player tic-tac-toe online game.
 
 # How to Start a Game
 
-Go to https://twoplayer-tictactoe.herokuapp.com. 
+Go to https://tictactoe.lhernandezcruz.com.
 
 * First player clicks create game and sends GameID to other player. 
 * Second player enters the GameID in the input box and clicks enter
