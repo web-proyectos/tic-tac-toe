@@ -37,17 +37,7 @@ $(document).ready(function () {
         $('#link').show();
     });
 
-    // Called when join has a key entered
-    $("#join").keypress(function (e) {
-        // Get the  id
-        let id = $("#join").val();
-
-        // Make sure we are submitting a nonempty GameID
-        if (e.which == 13 && id != null) {
-            // emit the gameID
-            socket.emit('join', { gameID: id });
-        }
-    });
+   
 
     // Called when game is starting
     socket.on("start", function (data) {
@@ -72,9 +62,6 @@ $(document).ready(function () {
         $("#status").html("GameID not found. Please Try again");
         $(".title").hide();
         $("#create").hide();
-
-        // Allow user to enter GameID again.
-        $("#join").show();
     });
 
     // Called when an invalid move is made
@@ -152,7 +139,6 @@ $(document).ready(function () {
         $("#board").hide();
         $(".item").show();
         $(".title").hide();
-        $("#join").hide();
         $("#remake").hide();
     });
 
